@@ -6,10 +6,10 @@
 #include <string.h>   // for memset()
 
 /**
- * @brief find max and min
+ * @brief find smallest and largest between two values
  */
-#define MIN(a, b) ((a) < (b) ? (a) : (b))
-#define MAX(a, b) ((a) > (b) ? (a) : (b))
+#define smallest(a, b) ((a) < (b) ? (a) : (b))
+#define largest(a, b) ((a) > (b) ? (a) : (b))
 
 /**
  * @brief initialise to zero
@@ -23,3 +23,4 @@
 
 #define TO_BE_IMPLEMENTED() \
     do { fprintf(stderr, "NOTE: to be implemented\n"); assert(0); } while (0)
+//do {) while allows the multiple actions to be grouped to a single macro)
